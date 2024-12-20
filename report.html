@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Report: DIY Penetration Testing</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="project2.html">Part-2</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Project 1 Summary</h2>
+            <section>
+                <h2>Penetration Testing – Part 1</h2>
+                <h3>Reconnaissance</h3>
+                <p>Gathered information about the target using various methods:</p>
+                <ul>
+                    <li><strong>WHOIS Lookup:</strong> Retrieved domain registration details such as registrar and owner information.</li>
+                    <li><strong>DNS Footprinting:</strong> Collected DNS records like A, MX, and TXT using tools such as <code>nslookup</code> and <code>dig</code>.</li>
+                    <li><strong>Network Footprinting:</strong> Mapped the network using tools like <code>Traceroute</code> and <code>Nmap</code>.</li>
+                    <li><strong>Social Engineering:</strong> Leveraged publicly available information from social media and forums to understand potential weaknesses.</li>
+                </ul>
+            
+                <h3>Port Scanning</h3>
+                <p>Identified open ports and associated services:</p>
+                <ul>
+                    <li>Used <code>nmap</code> to perform scans and determine services running on specific ports (e.g., SSH, FTP).</li>
+                    <li>Discovered MSSQL instances using <code>nmap</code> scripting features.</li>
+                    <li>Identified and documented services such as SSH, FTP, and SNMP.</li>
+                </ul>
+            
+                <h3>Vulnerability Scanning</h3>
+                <p>Conducted vulnerability analysis using multiple tools:</p>
+                <ul>
+                    <li><strong>SMB Login Check:</strong> Tested for weak credentials on SMB shares using <code>smbclient</code>.</li>
+                    <li><strong>VNC Authentication:</strong> Checked for vulnerabilities in VNC services to exploit unauthorized access.</li>
+                    <li><strong>WMAP Web Scanner:</strong> Analyzed web applications for vulnerabilities.</li>
+                    <li><strong>Nessus:</strong> Ran a comprehensive vulnerability scan, identifying misconfigurations and missing patches.</li>
+                </ul>
+            
+                <h3>Conclusion</h3>
+                <p>
+                    The reconnaissance phase provided critical insights into the target, enabling focused scanning and vulnerability identification. 
+                    Open ports and vulnerable services were documented, forming the foundation for further penetration testing in <strong>Project 2</strong>.
+                </p>
+            </section>            
+        </section>
+        <section>
+            <h2>Project 2 Summary</h2>
+                <h2>Penetration Testing – Part 2</h2>
+                
+                <h3>Client-Side Attacks</h3>
+                <p>Performed various client-side attack techniques, including:</p>
+                <ul>
+                    <li><strong>Binary Payloads:</strong> Created and deployed executable payloads to exploit vulnerabilities.</li>
+                    <li><strong>Client-Side Exploits:</strong> Exploited client-side vulnerabilities in applications such as browsers and email clients.</li>
+                    <li><strong>Social Engineering Toolkit:</strong> Used tools like the Social Engineering Toolkit (SET) to simulate phishing attacks and gather credentials.</li>
+                    <li><strong>Privilege Escalation:</strong> Gained elevated privileges through misconfigurations or vulnerabilities.</li>
+                </ul>
+            
+                <h3>Post-Exploitation Techniques</h3>
+                <p>Executed advanced post-exploitation tasks to control the system and extract critical information:</p>
+                <ul>
+                    <li><strong>Privilege Escalation:</strong> Identified and exploited privilege escalation vulnerabilities.</li>
+                    <li><strong>Pass the Hash:</strong> Used hashed credentials to access other systems without cracking passwords.</li>
+                    <li><strong>Clear Event Management:</strong> Cleared event logs to remove traces of exploitation.</li>
+                    <li><strong>Interacting with the Registry:</strong> Accessed and modified registry keys to maintain persistence.</li>
+                    <li><strong>Packet Sniffing:</strong> Captured network traffic to analyze sensitive data in transit.</li>
+                    <li><strong>Screen Capture:</strong> Took screenshots to monitor user activity.</li>
+                    <li><strong>Searching for Content:</strong> Searched for sensitive files and information on the compromised system.</li>
+                    <li><strong>Time Stamp Modification:</strong> Altered timestamps to obscure activity logs.</li>
+                    <li><strong>John the Ripper:</strong> Used John the Ripper for password cracking and analysis.</li>
+                </ul>
+            
+                <h3>Maintaining Access</h3>
+                <p>Implemented techniques to ensure continued access to the system:</p>
+                <ul>
+                    <li><strong>Keylogging:</strong> Monitored and captured keystrokes to gather credentials and monitor user activity.</li>
+                    <li><strong>Persistent Backdoors:</strong> Installed backdoors for long-term access to the system.</li>
+                </ul>
+            
+                <h3>Conclusion</h3>
+                <p>
+                    The techniques used in client-side attacks, post-exploitation, and access maintenance were critical in demonstrating how 
+                    attackers can exploit and control systems. These tasks complement the reconnaissance and vulnerability scanning conducted 
+                    in <strong>Project 1</strong> to form a comprehensive penetration testing methodology.
+                </p>
+            </section>            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 DIY Projects</p>
+    </footer>
+</body>
+</html>
